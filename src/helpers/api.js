@@ -1,8 +1,8 @@
-import axios from 'axios';
+import axios from 'axios'
 
 const apiClient = axios.create({
-  baseURL: 'https://api-reports.fishinhole-integration.commer.com/api',
+  baseURL: 'http://localhost:8000/api',
   withCredentials: true,
-});
+})
 
-export default apiClient;
+export default apiClient

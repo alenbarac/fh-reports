@@ -1,0 +1,102 @@
+.waterbody-single {
+	&__personal-reports {
+		padding-top: 3rem;
+		padding-bottom: 5rem;
+		background: #f7f7f7;
+
+		&__heading {
+			margin-bottom: 3rem;
+		}
+	}
+
+	&__create-inner {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	&__personal-report__list {
+		max-height: 565px;
+		overflow-y: auto;
+		padding-right: 20px;
+
+		&.styled-scrollbars {
+			scrollbar-color: #e6e6e7 #fff;
+		}
+		&.styled-scrollbars::-webkit-scrollbar-thumb {
+			/* Foreground */
+			background: #e6e6e7;
+		}
+	}
+
+	&__personal-report__list-item {
+		margin-bottom: 2rem;
+	}
+
+	&__personal-report__card .card-header {
+		background-color: #20275c;
+		color: #fff;
+	}
+
+	&__personal-report__card .card-text:last-child {
+		margin-bottom: 1rem;
+	}
+
+	&__personal-report__card-title {
+		font-size: 17px;
+	}
+
+	&__abs-btn {
+		position: absolute;
+		top: 75px;
+	}
+
+	&__abs-btn--right {
+		position: absolute;
+		top: 75px;
+		right: 40px;
+	}
+}
+
+.form-field-validation {
+	color: rgb(209, 0, 0);
+}
+
+@media screen and (max-width: 1441px) {
+	//
+}
+
+@media screen and (max-width: 576px) {
+	.waterbody-single__btn {
+		padding-left: 10px;
+		padding-top: 10px;
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		a {
+			font-size: 14px;
+		}
+	}
+
+	.waterbody-single__personal-report__list {
+		max-height: 100%;
+		overflow-y: auto;
+		padding-right: 0px;
+	}
+	.waterbody-single__personal-reports__heading {
+		margin-bottom: 10px;
+	}
+	.waterbody-single__btn--mobile {
+		padding-bottom: 20px;
+		button {
+			font-size: 14px;
+		}
+	}
+
+	.waterbody-single__abs-btn {
+		position: relative;
+		top: 10px;
+		a {
+			font-size: 13px;
+		}
+	}
+}
